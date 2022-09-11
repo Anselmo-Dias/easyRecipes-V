@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    width: min(90rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+/* -----Header----- */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF9330;
+
+    gap: 3.2rem;
+
+    margin-bottom: 6.5rem;
+}
+
+header img {
+    margin: 0.4rem 0rem 0.4rem 0rem;
+}
+
+header h1 {
+    font-weight: 500;
+    font-size: 4.4rem;
+    color: #ffffff;
+}
+
+/* -----Section/login----- */
+
+
+#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    background-color: #FF9330;
+
+    border-radius: 3rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem black;
+}
+
+#login div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin: 2rem;
+    border-radius: 2rem;
+    background: #E8E8E8;
+}
+
+#login div h2 {
+    font-size: 4.4rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#login div input {
+    width: 80%;
+    height: 4rem;
+    
+
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    border-radius: 2rem;
+
+    padding-left: 2rem;
+
+    border: 0;
+   
+}
+
+#login div .Password{
+    margin-block: 2.5rem;
+}
+
+#login div button {
+    padding: .8rem 3rem .8rem 3rem;
+    border-radius: 5rem;
+    background-color: #ffffff;
+   
+}
+
+#login div ul {
+    margin-block: 1.7rem;
+}
+
+#login div ul li a {
+    color: blue;
+    text-decoration: underline blue;
+}
+
+/* -----Footer----- */
+ footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15.5rem;
+
+
+    color: #ffffff;
+    background-color: #000000;
+ }
+
+ footer div {
+    display: flex;
+    gap: 1.1rem;
+ }
+
+ footer div > p,
+ footer div p {
+    font-size: 1.8rem;
+    margin-left: 1.4rem;
+ }
+
+ footer #icons {
+    margin-right: 1.4rem;
+ }
+
+ footer div > img {
+    width: 2.8rem;
+    height: auto;
+    justify-content: flex;
+    margin-block: 1.4rem;
+ }
+
+
+ /* ----Section/login---- */
+@media (min-width: 768px) {
+
+section#login div h2 {
+    font-size: 6.4rem;
+    margin-bottom: 10.5rem;
+
+}
+
+section#login div input.email {
+    margin-bottom: 5.5rem;
+}
+
+section#login div input {
+    font-size: 3.2rem;
+}
+
+section#login div button {
+    font-size: 3.2rem;
+    margin-bottom: 2.7rem;
+}
+
+ /* ----Section/login---- */
+
+footer div#icons img {
+    display: flex;
+    width: 4.8rem;
+}
+
+footer #icons {
+    gap: 2.2rem;
+}
+
+}
+
+
+
+
+
+
