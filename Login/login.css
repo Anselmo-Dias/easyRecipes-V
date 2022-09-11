@@ -152,7 +152,7 @@ header h1 {
     margin-right: 1.4rem;
  }
 
- footer div > img {
+ footer div > a > img {
     width: 2.8rem;
     height: auto;
     justify-content: flex;
@@ -184,7 +184,7 @@ section#login div button {
 
  /* ----Section/login---- */
 
-footer div#icons img {
+footer div#icons a img {
     display: flex;
     width: 4.8rem;
 }
