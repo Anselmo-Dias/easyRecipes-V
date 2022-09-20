@@ -85,6 +85,7 @@ header h1 {
 
 #login div h2 {
     font-size: 4.4rem;
+    font-weight: 400;
 
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -147,9 +148,14 @@ header h1 {
     font-size: 1.8rem;
     margin-left: 1.4rem;
  }
-
+a,
  footer #icons {
     margin-right: 1.4rem;
+    transition:  0.3s;
+ }
+
+ footer #icons a:hover {
+    transform: translateY(-2rem);
  }
 
  footer div > a > img {

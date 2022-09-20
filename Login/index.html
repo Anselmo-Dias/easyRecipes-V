@@ -16,37 +16,57 @@
     </header>
 
     <main class="wrapper">
-        <section id="login" >
+        <section id="login">
             <div>
-                <h2>login</h2>
-                <input class="email" type="email" name="email" placeholder="EMAIL" required>
+                <h2>LOGIN</h2>
+                <form action="">
+                    <input 
+                    class="email" 
+                    type="email" 
+                    name="email" 
+                    placeholder="EMAIL" 
+                    required
+                    
+                    >
 
-                <input class="Password" type="number" name="Password" placeholder="PASSWORD" required>
+                    <input 
+                    class="Password" 
+                    type="password"
+                    name="Password"
+                    placeholder="PASSWORD" 
+                    required    
+                    minlength="4"
+                    maxlength="8"    
+                    inputmode="numeric"
+                    autocomplete="on"                 
+                    >
 
-                <button type="submit" id="submit">ENTRAR</button>
+                    <button  type="submit" id="submit">
+                        <a href="https://google.com">ENTRAR</a>
+                    </button>
 
-                <ul>
-                    <li> <a href="">esqueci a senha</a> </li>
-                    <li> <a href="">cadastre-se aqui</a> </li>
-                </ul>
+                    <ul>
+                        <li> <a href="">esqueci a senha</a> </li>
+                        <li> <a href="">cadastre-se aqui</a> </li>
+                    </ul>
+                </form>
             </div>
         </section>
-
-        
     </main>
+
     <footer id="footer">
-       
+
         <div>
             <p>COPYRIGHT@GRUPO14</p>
         </div>
         <div id="icons">
-            <a href="http://"> <img src="../assets/Telefone.svg" alt="icone do telefone"></li></a>
+            <a href=""> <img src="../assets/Telefone.svg" alt="icone do telefone"></li></a>
             <a href=""><img src="../assets/facebook.svg" alt="icone do facebook"></li></a>
             <a href=""><img src="../assets/email.svg" alt="icone do email"></li></a>
             <a href=""><img src="../assets/instagram.svg" alt="icone do instagram"></li></a>
-            
+
         </div>
-    </footer> 
+    </footer>
 </body>
 
 </html>
