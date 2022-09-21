@@ -21,6 +21,10 @@ button {
     cursor: pointer;
 }
 
+button a {
+    color: #000000;
+}
+
 ul {
     list-style: none;
 }
@@ -66,7 +70,7 @@ header h1 {
     background-color: #FF9330;
 
     border-radius: 3rem;
-    box-shadow: 0.4rem 0.4rem 0.4rem black;
+    box-shadow: 0.7rem 0.7rem 0.7rem black;
 }
 
 #login div {
@@ -78,7 +82,7 @@ header h1 {
 
     width: 100%;
 
-    margin: 2rem;
+    margin: 3rem;
     border-radius: 2rem;
     background: #E8E8E8;
 }
@@ -148,8 +152,8 @@ header h1 {
     font-size: 1.8rem;
     margin-left: 1.4rem;
  }
-a,
- footer #icons {
+
+ footer #icons a {
     margin-right: 1.4rem;
     transition:  0.3s;
  }
@@ -188,7 +192,7 @@ section#login div button {
     margin-bottom: 2.7rem;
 }
 
- /* ----Section/login---- */
+ /* ----Footer/login---- */
 
 footer div#icons a img {
     display: flex;
