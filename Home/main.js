@@ -25,9 +25,9 @@
  
 
 
-// function openMenu() {
-//     open.classList.remove('show')
-// }
+function openMenu() {
+    open.classList.add('show')
+}
   
   function closeMenu() {
     close.classList.remove('show')
