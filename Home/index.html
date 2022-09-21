@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body >
+    <header id="header">
+        <div id="logo">
+            <img src="../assets/logo.svg" alt="logo do site">
+            <p>EasyRecipes</p>
+        </div>
+
+        <nav class="container show ">
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="">blog</a></li>
+                    <li><a class="title" href="">home</a></li>
+                    <li><a class="title" href="">enviar receita</a></li>
+                    <li><a class="title" href="">receitas</a></li>
+                    <li><a class="title" href="">login</a></li>
+                </ul>
+            </div>
+            <div class="toggle open"  onclick="openMenu()"><img src="../assets/menu.svg" alt=""></div>
+            <div class="toggle close" onclick="closeMenu()"><img src="../assets/close.svg" alt=""></div>
+        </nav>
+    </header>
+
+    <script src="main.js"></script>
+</body>
+</html>

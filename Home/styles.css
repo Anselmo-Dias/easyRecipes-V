@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    width: min(90rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+}
+
+/* .texto {
+    color: #000;
+    text-shadow: 
+             -1px -1px 0px #000, 
+             -1px 1px 0px #000,      
+              1px -1px 0px #000,    
+              1px 0px 0px #000;
+} */
+
+.title {
+        font: 700 1.875rem 'Poppins', sans-serif;
+    color: #FF9330;
+    -webkit-font-smoothing: auto;
+}
+
+/* ------header------ */
+
+header {
+    display: flex;
+    background-color: #FF9330;
+    justify-content: space-between;
+    align-items: center; 
+    height: 10rem;
+}
+
+header div p {
+    color: #fff;
+    margin-inline: 1.1rem;
+}
+
+#logo {
+    display: flex;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.4rem;
+
+    margin-inline: 1.6rem;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    transition: color 0.3s ;
+    position: relative;
+}
+
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0%;
+    height: 0.2rem;
+    background: black;
+
+    position: absolute;
+    left: 0;
+    bottom: -1rem;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Mostrar menu */
+nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    
+    background-color: #fff;
+    height: 100vh;
+    width: 100vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+nav.show .menu {
+    display: grid;
+    place-content: center;
+}
+
+nav.show ul.grid {
+    gap: 6.4rem;
+}
+
+/* toggle menu  */
+
+.toggle {
+    font-size: 2.4rem;
+    margin-right: 1.7rem;
+    cursor: pointer;
+}
+
+nav .close {
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+nav.show div.close {
+    visibility: visible;
+    opacity: 1;
+}
