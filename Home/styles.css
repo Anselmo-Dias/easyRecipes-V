@@ -80,6 +80,7 @@ header div p {
     align-items: center;
 }
 
+/* ------navigation------ */
 nav {
     display: flex;
     align-items: center;
@@ -118,11 +119,16 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-
-
 nav .menu {
     opacity: 0;
     visibility: hidden;
+    
+    top: -20rem;
+    transition: 0.2s;
+}
+
+nav .menu ul {
+    display: none;
 }
 
 /* Mostrar menu */
@@ -137,12 +143,15 @@ nav.show .menu {
     position: fixed;
     top: 0;
     left: 0;
-}
 
-nav.show .menu {
     display: grid;
     place-content: center;
 }
+
+nav.show .menu ul {
+    display: grid;
+}
+
 
 nav.show ul.grid {
     gap: 6.4rem;
@@ -150,7 +159,7 @@ nav.show ul.grid {
 
 /* toggle menu  */
 
-.toggle {
+div.toggle {
     font-size: 2.4rem;
     margin-right: 1.7rem;
     cursor: pointer;
@@ -161,11 +170,18 @@ nav .close {
     visibility: hidden;
 
     position: absolute;
-    right: 1.5rem;
-    top: 1.5rem;
+    right: 0.2rem;
+    top: -1.5rem;
+
+    transition:  0.3s;
+}
+
+nav.show .open {
+    display: none;
 }
 
 nav.show div.close {
     visibility: visible;
     opacity: 1;
+    top: 3.5rem;
 }
