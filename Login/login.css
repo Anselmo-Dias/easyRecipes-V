@@ -160,7 +160,7 @@ header h1 {
  }
 
 
- /* ----Section/login---- */
+ /* ----Responsive---- */
 @media (min-width: 768px) {
 
 section#login div h2 {
